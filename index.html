@@ -1,0 +1,24 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dinoosawruss | RBG</title>
+  </head>
+  <body>
+    <script>
+    const sleep = (milliseconds) => {
+      return new Promise(resolve => setTimeout(resolve, milliseconds))
+    }
+
+    async function colourChange() {
+      for (var i = 0; i < 16700000; i++) {
+        console.log(i)
+        await sleep(1)
+        document.body.style.backgroundColor = i;
+      }
+    }
+
+    colourChange()
+    </script>
+  </body>
+</html>
